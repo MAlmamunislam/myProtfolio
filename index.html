@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD Almamun | Developer Portfolio</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-base-200 text-base-content">
+
+<!-- Navbar -->
+<div class="navbar bg-base-100 shadow-lg fixed top-0 z-50">
+  <div class="container mx-auto flex justify-between">
+    <a class="text-xl font-bold">Almamun</a>
+    <ul class="menu menu-horizontal px-1 hidden md:flex">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section id="home" class="hero min-h-screen pt-20">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <img src="./pic/IMG_1817.jpeg" 
+         class="max-w-sm rounded-full shadow-2xl border-4 border-primary" />
+    <div>
+      <h1 class="text-5xl font-bold">MD Almamun</h1>
+      <p class="py-6 text-lg">
+        Frontend Developer | JavaScript Enthusiast
+      </p>
+      <button onclick="scrollToContact()" class="btn btn-primary">
+        Hire Me
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-20 container mx-auto text-center">
+  <h2 class="text-4xl font-bold mb-6">About Me</h2>
+  <p class="max-w-2xl mx-auto text-lg">
+    I build responsive and modern web applications using HTML, CSS, JavaScript and modern frameworks.
+    My goal is to become a full-stack developer and work on real-world scalable applications.
+  </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-20 bg-base-100">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-10">My Skills</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="card bg-base-200 shadow-xl">
+        <div class="card-body">
+          <h3 class="card-title">HTML</h3>
+          <progress class="progress progress-primary" value="90" max="100"></progress>
+        </div>
+      </div>
+
+      <div class="card bg-base-200 shadow-xl">
+        <div class="card-body">
+          <h3 class="card-title">CSS</h3>
+          <progress class="progress progress-secondary" value="85" max="100"></progress>
+        </div>
+      </div>
+
+      <div class="card bg-base-200 shadow-xl">
+        <div class="card-body">
+          <h3 class="card-title">JavaScript</h3>
+          <progress class="progress progress-accent" value="75" max="100"></progress>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-20 container mx-auto">
+  <h2 class="text-4xl font-bold text-center mb-10">Projects</h2>
+
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <div class="card bg-base-100 shadow-xl">
+      <figure>
+        <img src="./pic/project1.png" alt="Project">
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Todo App</h2>
+        <p>Task management app built with JavaScript and Local Storage.</p>
+        <div class="card-actions justify-end">
+          <a href="https://malmamunislam.github.io/Assignment-4/" target="_blank" class="btn btn-primary">Live</a>
+          <a href="https://github.com/MAlmamunislam/Assignment-4" target="_blank" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-base-100 shadow-xl">
+      <figure>
+        <img src="./pic/project2.png" alt="Project">
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Todo App</h2>
+        <p>Task management app built with JavaScript and Local Storage.</p>
+        <div class="card-actions justify-end">
+          <a href="https://malmamunislam.github.io/second-assignment/" target="_blank" class="btn btn-primary">Live</a>
+          <a href="https://github.com/MAlmamunislam/second-assignment" target="_blank" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-base-100 shadow-xl">
+      <figure>
+        <img src="./pic/project3.png" alt="Project">
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Todo App</h2>
+        <p>Task management app built with JavaScript and Local Storage.</p>
+        <div class="card-actions justify-end">
+          <a href="https://malmamunislam.github.io/payyo-bank/home.html" target="_blank" class="btn btn-primary">Live</a>
+          <a href="https://github.com/MAlmamunislam/payyo-bank" target="_blank" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-base-100 shadow-xl">
+      <figure>
+        <img src="./pic/project4.png" alt="Project">
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Todo App</h2>
+        <p>Task management app built with JavaScript and Local Storage.</p>
+        <div class="card-actions justify-end">
+          <a href="https://malmamunislam.github.io/Assignment-1/" target="_blank" class="btn btn-primary">Live</a>
+          <a href="https://github.com/MAlmamunislam/Assignment-1" target="_blank" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 bg-base-100">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
+
+    <form id="contactForm" class="max-w-md mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" 
+             class="input input-bordered w-full" id="name">
+      <input type="email" placeholder="Your Email" 
+             class="input input-bordered w-full" id="email">
+      <textarea placeholder="Your Message" 
+                class="textarea textarea-bordered w-full" id="message"></textarea>
+      <button type="submit" class="btn btn-primary w-full">
+        Send Message
+      </button>
+    </form>
+
+    <p id="formMessage" class="mt-4 text-success"></p>
+  </div>
+</section>
+
+<footer class="footer footer-center p-6 bg-base-200 text-base-content">
+  <p>© 2026 MD Almamun. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
